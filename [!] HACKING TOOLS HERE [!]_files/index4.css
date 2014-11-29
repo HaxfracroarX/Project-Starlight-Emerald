@@ -1,0 +1,249 @@
+
+/*GENERAL*/
+html,body,ul,li{margin:0;padding:0}
+body{background: #41525b; font:normal 11pt 'Open Sans',verdana, sans-serif;}
+h1,h2,h3,h4,h5,h6{margin: 10px 0;padding:0;font-family: montserrat,'arial black',impact,sans-serif;}
+p{margin: 10px 0;padding:0}
+li{list-style:none; padding:0 5px 5px 20px}
+a{text-decoration:none; outline:none; color:#a0f}
+a:visited{color:#7C5E97}
+a:hover{color:#9735F1}
+a img{border:none}
+dt{font-weight:bold; margin-left:1em}
+q, blockquote{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+blockquote	{background: #ccc; background:rgba(0,0,0,0.3); font-size:16px; position:relative; margin:2em}
+cite {font-weight:bold; color:#000033; font-style:normal} 
+cite img{border-radius:50%}
+pre	{display:block; margin:auto 1em; padding:10px; width:90%; 
+	border:1px solid #003399; border-top:10px solid #0099CC; background-color:#EFF;
+	font:13px normal "Courier New",Courier,monospace; height:100%; height:auto}
+table{border-collapse:collapse;border-spacing:0}
+h4 {margin:1em 10px 2px 5px; padding:0; text-indent:1em; font-size:110%; background:url(i-nav-flecha.png) center left no-repeat transparent; border-bottom:1px solid #BBB}
+h4:hover {background-image:url(i-nav-flecha-on.png)}
+h4 a {color:inherit !important}
+#contenido ul li {list-style: inside url(pokebolita-li.png); cursor:default}
+#contenido ul li:hover {list-style: inside url(pokebolita-li-hover.png)}
+.wrapper {width: 940px; margin: 0 auto}
+.clear {clear:both}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+#footer {background: #344;color: #999; padding:10px 0}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcgFhaRv2pGgT5Kf0An0s4MM.woff) format('woff');
+}
+a {text-decoration: none}
+
+/*CABECERA*/
+#topbar {height: 40px; background: #17252d}
+@font-face {
+  font-family: 'glyphicons';
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/fonts/glyphicons-halflings-regular.eot');
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/fonts/glyphicons-halflings-regular?#iefix') format('embedded-opentype'), url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/fonts/glyphicons-halflings-regular.woff') format('woff'), url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+#shortcuts {padding: 5px 10px 0}
+#shortcuts a {font-family: "glyphicons"; text-indent: 0px; color: #fff; text-align: center; line-height:30px; position: relative}
+#shortcuts a {display: block; float: left; background-color: rgba(0,0,0,0.3); width: 30px; height: 30px; margin:0 5px 0; border-radius: 5px; transition:.4s}
+#shortcuts a:first-child:before {content: "\e021";color: rgba(255,255,255,0.7);}
+#shortcuts #scf:before {content: "\e111";color: rgba(255,255,255,0.7);}
+#shortcuts #scf:after {font-size: 10px;content: "\e111";position: absolute;top: 4px; right:5px;color: #fff;-webkit-transform: rotateY(180deg);}
+#shortcuts #scf + a:before {content: "\e060";}
+#shortcuts #scf + a:before {content: "\e060";}
+#shortcuts #scf + a + a:before {content: "\e022";font-size:15px}
+#shortcuts #scf + a + a + a:before {content: "\e025";font-size:15px}
+#shortcuts a:hover {background-color: rgba(0,0,0,0,0.6); color: #a0f}
+#shortcuts a:hover:before {color: #a0f !important}
+#banderitas {float: right; text-align: right; text-indent: 2em; line-height: 30px}
+#banderitas span {color: #fff; background: none !important}
+#wahlogo {display: block; float: left; font: normal 36px/36px montserrat; color: #fff; text-indent: 30px; text-shadow: 0px 2px 0px #000; margin:10px 0}
+#wahlogo em {font-size: 24px; line-height:24px;display:block; font-style:normal; color: #a0a9ad}
+#wahbar {background: #41525b; height: 80px; border-bottom: 3px solid #2d3940;}
+#menunav {float: right; width:520px}
+#menunav li{float: left; display: block; text-align: center; position: relative;padding:0; margin:0}
+#menunav strong {display: block; width: 100px; font: normal 18px/80px montserrat; color: #fff; text-shadow: 0 2px 0 rgba(0,0,0,0.3); padding:0; height:80px;}
+#menunav li ul {height: 0px; float:right; overflow: hidden; position: absolute; top:75px; right:0px; width:200px; background: #ccc; margin-right: -50px; padding: 0;}
+#menunav li ul::before {content:' '; display: block; border: 10px solid #000; border-color: transparent transparent #ccc; position: absolute; top:-19px; right:90px; height: 0px; width:0px}
+#menunav li:last-child ul {margin-right: 0px}
+#menunav li:last-child ul::before {right: 50px}
+#menunav li ul li {display: block; float:none; text-align: left; text-indent: 10px;padding:0; }
+#menunav li ul a {display: block; color: #333; padding: 10px; height: auto; background-image:none; }
+#menunav li ul a:hover {background: #bbb; background: rgba(0,0,0,0.1); color: #000}
+#menunav li ul li a::after {content: "»"; float: right; margin-left: -20px; color: #999}
+#menunav li ul li a:hover::after {color: #fff}
+#menunav li:hover ul {height: auto; z-index: 100; max-height: 400px; overflow: visible; padding:3px 0; border-radius: 3px;box-shadow: 2px 2px 5px rgba(0,0,0,0.7) }
+
+/*TATAMI*/
+#infoarea {background: #081116; padding: 1px 0; margin: 0; }
+#tatami {width: 910px; height: 360px; margin: 50px auto;  background: #223;color: #fff}
+#lomas-twi {width: 182px;  float: right; background: #06156e;overflow-x:hidden; overflow-y: hidden; padding: 0 !important; list-style: none }
+#lomas-twi ul {padding: 30px 0;height: 300px;overflow-y: hidden; overflow-x:hidden;background: url(lomas-twitter.png) top center repeat-x;}
+#lomas-twi {position: relative;}
+#lomas-twi b{display: block;width:100%; height:32px; background: rgba(0,0,0,0.1);position: absolute; bottom: 0px; left:0px;	-webkit-touch-callout: none; -moz-touch-callout: none;	touch-callout: none; -webkit-user-select: none;-moz-user-select: none;user-select: none;}
+#lomas-twi b:hover {background:rgba(0,0,0,0.5)}
+#lomas-twi .subir {bottom: auto; top:0px}
+#lomas-twi li {padding: 1em 0.5em; border-bottom: 1px solid #4C59A5; font-size: 12px}
+#lomas-twi #novedadestw {padding: 0; margin:-10px 0 -10px 20px; border-bottom: 0 none; font: normal 16px montserrat; }
+#lomas-twi small {display: block; text-align: right; font-size: 11px;opacity: 0.5;text-transform: lowercase}
+#lomas-twi a{color: #99d}
+#lomas-not {width: 364px; height: 180px; float: left; background: #500;overflow:hidden}
+#lomas-not a {display: none; height: 180px; background-size: cover; background-position: center; position: relative; transition:.2s ease-out; border:0px solid #000}
+#lomas-not a.activo {display: block;}
+#lomas-not span {position: absolute;  bottom: 0px; background:#666; background: rgba(0,0,0,0.6); color: #fff; height: 3em; width: 100%; transition:.2s ease-out; text-shadow: 0px 1px 2px #000;}
+#lomas-not span strong {position: absolute; bottom: 0px; left:0px; padding: .5em;}
+#lomas-not span cite {display: none }
+#lomas-not a:hover {border:10px solid #1D0F0A; height:160px;}
+#lomas-not a:hover span {height: 100%;background: rgba(0,0,0,0.8)}
+#lomas-not a:hover span cite {font-size: 12px; text-align: right}
+#lomas-not div {float: right; position: relative; z-index:5}
+#lomas-not b {display:inline-block; width:12px; height:12px; background: #000; opacity:0.3; margin: 5px 5px 0; border-radius: 50%; cursor: crosshair}
+#lomas-not b:hover{opacity:0.6}
+#lomas-not b.activo{background:#fff}
+#lomas-gal {width: 364px; height: 180px; float: left; background: #04674c; }
+#lomas-gal a {position:relative; width: 81px; height: 81px; overflow: hidden; display: block; float: left; margin: 6px 0 0 8px; background: #4C927F;}
+#lomas-gal a span{width: 81px; height: 81px; overflow: hidden; display: block; background: #fff center no-repeat; -webkit-transition: .1s ease-out; -moz-transition: .1s ease-out; transition: .1s ease-out}/*box-shadow: 0px 2px 4px #000; border-radius:5px;outline:0px solid #000; */
+#lomas-gal a:hover span{-webkit-transform: scale(0.85); -moz-transform: scale(0.85); transform: scale(0.85); opacity:0.2}
+#lomas-gal a:hover:before {display: block; content: "\e003"; font-family:glyphicons; color: #fff; position: absolute; z-index: 40; left: 30px; top: 30px}
+#lomas-dex {width:364px; height: 90px; background: #41525b; float:left; margin-top: -90px; position: relative}
+#lomas-dex a {width: 156px; height:75px; display:block; background: rgba(255,255,255,0.5); margin:40px 0 0 107px;  border-radius: 50%; transition:.2s ease-out; position: relative}
+#lomas-dex a:hover {background: #fff; box-shadow: 0 0 90px #fff, 0 0 10px #fff}
+#lomas-dex a img {display:block; width: 96px; height: auto; max-height:96px; position: absolute; margin:0 30px; top:-46px; left: 0px; transition: .2s; -webkit-animation: dexIn .2s linear;-moz-animation: dexIn .2s linear;animation: dexIn .2s linear;}
+#lomas-dex a img.off {opacity:0; -webkit-animation: dexOut .2s linear;-moz-animation: dexOut .2s linear;animation: dexOut .2s linear;}
+@-webkit-keyframes dexIn {0% {left: 40px;}	100% {left: 0px;}}@-moz-keyframes dexIn {0% {left: 40px;}	100% {left: 0px;}}@keyframes dexIn {0% {left: 40px;}	100% {left: 0px;}}@-webkit-keyframes dexOut {0% {left: 0px;}	100% {left: -40px;}}@-moz-keyframes dexOut {0% {left: 0px;}	100% {left: -40px;}}@keyframes dexOut {0% {left: 0px;}	100% {left: -40px;}}
+#lomas-dex b {color: #999;position: absolute; top:30px; left: 20px; font-size:30px; font-family: montserrat;  padding:0 3px 5px; border-radius:50%; cursor:pointer; -webkit-user-select: none;-moz-user-select: none;user-select: none;}
+#lomas-dex b.dexder {left: auto; right: 20px}
+#lomas-dex b:hover {background: #000; background:rgba(0,0,0,0.5);}
+
+#lomas-ads {width: 182px; height: 90px; float: left;}
+#lomas-ads img {display: block}
+#lomas-spa {display:block; float:left; position: relative; width: 182px; height: 90px}
+#lomas-spa span, #lomas-spa strong {position:absolute;display:block; width: 182px; text-align: center; transition: .3s ease-out}
+#lomas-spa a {display: block; position:absolute; background: red center;background-size:cover; height:90px; width:182px;float: left; opacity: 1; transition: .3s ease-out}
+#lomas-spa strong {opacity: 0; padding-top: 10px; -webkit-transform: rotateY(-90deg); -moz-transform: rotateY(-90deg); transform: rotateY(-90deg); font-size: 20px; font-weight: bold; color: #FFF; height: 80px; background: #000; background: rgba(71, 58, 5, 0.8)}
+#lomas-spa strong b {display: block; font-size:smaller; line-height:1.5em}
+#lomas-spa:hover span {opacity: 0; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); transform: rotateY(90deg)} 
+#lomas-spa:hover a {opacity: 1} 
+#lomas-spa:hover strong {opacity: 1; -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); transform: rotateY(0deg)}
+#lomas-ann {width:728px; height: 90px; overflow: hidden; background: #932; clear:left; position: relative; }
+
+/*CONTENIDOS*/
+#contenido {background:#2F4F4F }
+#texto-seccion {margin: 0 auto; padding:10px; max-width:940px;background: #ffF;}
+#identificador {margin: -10px -10px 10px; padding:10px 10px;background:#ccc; text-align: center}
+#identificador h1,#identificador h2 {font-size:24px}
+#portada #identificador , .web #identificador {display:none}
+#portada #identificador.noticia, #noticias #identificador {display:block}
+
+/*NOTICIAS*/
+.noticia {margin: 0 -10px; padding: 20px; color: #333}
+.noticia h4 {background: #B22222; font: normal 24px/30px montserrat; color: #fff; padding: 5px 10px }
+.noticia h4 a {color: inherit}
+.noticia .subtitulo, .noticia .subtitulo a {text-align: right; font-size: 14px; color: #666}
+.noticia iframe {display: block; margin: 0 auto}
+.noticia h3 {color: #000}
+
+.comentarios {text-align:right; font-size:95%; color:#777}
+.comentarios a:hover {font-weight:bold}
+blockquote.comentario {width:600px; margin:20px 0 10px 100px; position:relative; font-family:verdana,sans-serif; font-size:10pt}
+blockquote.comentario div {position:absolute; left:0; top:0; text-align:right; width:180px}
+blockquote.comentario div span {text-transform: lowercase;}
+blockquote.comentario cite{display:block; font-size:120%}
+blockquote.comentario p {text-align:left; position:relative; left:190px; top:-5px; padding:5px; width:400px; background:#FFD59A; border:1px solid #FFA500; -moz-border-radius:10px; border-radius:10px; -webkit-border-radius:10px; color:#400}
+
+/*OTRAS AREAS*/
+.ilustracion {float:right; margin:5px; border:3px double #CCC; font-size:10px; background-color:#EEF}
+.centrado,img.center {display:block; margin:0 auto; text-align:center}
+.derecha {float:right}
+.izquierda {float:left}
+img.right {float: right; margin-left:0.5em}
+img.left {float:left; margin-right:0.5em}
+.screen {width:240px !important; height:160px !important}
+.dosimg {height:160px; width:495px; overflow-x:hidden; overflow-y:auto; margin: .5em auto}
+.aviso {border:2px solid #D33; background:#FC5; margin:15px; padding:5px; text-align:center}
+.resumen {text-align:center; width:60%; margin:6px auto 1px auto; color:#C5D; background:url(http://i27.tinypic.com/1556pue.png) 3px 2px no-repeat; border:1px solid #BCD; border-width:1px 0 0px 1px; -moz-border-radius-topleft:8px; min-height:18px}
+.rojo {color:#C00 !important}
+.galeria {margin:1em auto; cellpadding:0; cellspacing:0; border-collapse: collapse; width:500px; font-size:12px; text-align:center}
+.galeria th, .hack th {background:url(h-th-galeria.png) top repeat-x #808080; border:1px solid #DDD; color:#333; font-weight:bold; font-size:110%; min-height:20px}
+.galeria th:hover, .hack th:hover {color:#FFF}
+.galeria td, .hack td {background:#FFF; border:1px solid #DDD}
+.galeria td:hover {outline:1px solid #FF9933; background-color:#EEE}
+.youtube {text-align: center}
+table.hack {margin:1.5em auto; display:block; border-collapse:collapse; width:450px;
+	font-size:10px}
+table.hack th {border:Brown solid 1px; background-color:IndianRed; font-weight:bold; text-align:center} table.hack th a {display:block; color:#FFF !important}
+table.hack td {border:Brown solid 1px; background:center no-repeat Ivory; color:black; text-align:left; vertical-align:top}	
+table.hack td:hover, table.hack li:hover {color:Navy}
+table.hack li {font-size: 10px; list-style: none !important;
+	color: #000;
+	line-height: 2.5ex;
+	text-indent:10px;
+	cursor:default}
+	table.hack ul {margin:3px; padding:0px; margin-bottom:-20px;} table.hack img  {display:block; width:240px; height:160px}
+	table.hack li img {display:inline}
+	table.hack td a:hover img {visibility:hidden}
+
+div.descarga {margin:5px 0 0 5px; font-size:11px; width:200px}
+div.descarga a, div.descargar a {padding-left:14px; color:#070; background:url(/apariencia/flecha-descargar.png) 0px 0px no-repeat}
+div.descarga a:hover, div.descargar a:hover {position:static !important; background-position:0px 1px; text-decoration:underline}
+#anuncio-ancho {display:none; margin:o auto; text-align:center}
+.botondescarga {background:url(boton-descarga.png) 0px 0px no-repeat; display:block; margin:5px auto; width:110px; height:50px;
+	padding-left:40px; line-height:45px; text-align:center; color:#FFF !important; font-size:14px; font-weight:bold}
+.botondescarga:hover {background-position:0px -50px; color:#6D0 !important; text-decoration:none !important}
+a.botondescarga {color:#FFF !important;}
+a.botondescarga:hover {color:#6D0 !important;}
+
+/*Iconitos*/
+.porcentaje {width:100px; height:15px; border:1px solid #CCC; position:relative; background:#FFF; overflow:hidden;}
+.porcentaje div {background:url(http://img823.imageshack.us/img823/4138/barraporcentaje.png) left; height:15px; }
+.porcentaje em {display:block; position:absolute; top:1px; left:1px; width:100px; font-size:70%; color:#400; text-align:center}
+.iconito, [class^="ico-"] {background:url(iconitos.png) top no-repeat; width:16px; height:16px; line-height:16px; overflow:hidden; display:block; float:left;}
+.ico-RED, .ico-Español, .ico-Francés, .ico-es, .ico-fr {background-position:0px -16px}
+.ico-GREEN, .ico-Portugués, .ico-Italiano, .ico-pt, .ico-it {background-position:0px -32px}
+.ico-BLUE, .ico-English, .ico-Inglés, .ico-Ruso, .ico-en, .ico-ru {background-position:0px -48px}
+.ico-YELLOW, .ico-Alemán, .ico-de {background-position:0px -64px}
+.ico-AAUE, .ico-GOLD {background-position:0px -80px}
+.ico-AAXE, .ico-SILVER {background-position:0px -96px}
+.ico-BYTE, .ico-CRYSTAL {background-position:0px -112px}
+.ico-AXVE, .ico-Ruby, .ico-AXVS {background-position:0px -128px}
+.ico-AXPE, .ico-AXPS {background-position:0px -144px}
+.ico-BPEE, .ico-BPES {background-position:0px -160px}
+.ico-BPRE, .ico-BPRS {background-position:0px -176px}
+.ico-BPGE, .ico-BPGS {background-position:0px -192px}
+.ico-ADAE, .ico-DIAMOND {background-position:0px -208px}
+.ico-APAE, .ico-PEARL {background-position:0px -224px}
+.ico-CPUE, .ico-PLATINUM {background-position:0px -240px}
+.ico-IPKE, .ico-HG {background-position:0px -256px}
+.ico-IPGE, .ico-SS {background-position:0px -272px}
+.ico-IRBO, .ico-BLACK{background-position:0px -288px}
+.ico-IRAO, .ico-WHITE {background-position:0px -304px}
+.ico-IREO {background-position:0px -288px}
+.ico-IRDO {background-position:0px -304px}
+.ico-resuelto {background-position:0px -368px}
+.ico-region {background-position:0px -384px}
+.ico-Essentials {background-position:0px -400px}
+.ico-PSP-DS {background-position:0px -416px}
+.ico-0 {background:url(progresando-0.gif) left center no-repeat}
+.ico-1 {background:url(progresando-1.gif) left center no-repeat}
+.ico-2 {background:url(progresando-2.gif) left center no-repeat}
+.ico-3 {background:url(progresando-3.gif) left center no-repeat}
+
+#adcopy-outer {background: none !important; border:0 none !important}
+/*#adcopy-link-logo {display: none !important}*/
+#wrap.donwload-file #contenedor{background: #fff url(ambiente-descargas.jpg) center top no-repeat}
+#dexwindow img{margin: 0 auto; display: block; min-height: 96px}
